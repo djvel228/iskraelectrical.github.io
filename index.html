@@ -52,6 +52,9 @@
   .btn-main:hover { transform: translateY(-2px); }
   .btn-secret { background: linear-gradient(135deg, #A0233F, #D44E72); box-shadow: 0 8px 32px rgba(160,35,63,0.45); }
   .btn-secret:hover { box-shadow: 0 12px 40px rgba(212,78,114,0.6); }
+  .social-links { display: flex; gap: 16px; margin-top: 8px; margin-bottom: 4px; }
+  .social-btn { width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; text-decoration: none; transition: background 0.2s, border-color 0.2s, transform 0.15s; color: rgba(255,255,255,0.6); }
+  .social-btn:hover { background: rgba(160,35,63,0.2); border-color: rgba(192,57,90,0.5); color: #C0395A; transform: translateY(-2px); }
   .privacy-link { margin-top: 24px; font-size: 11px; color: rgba(255,255,255,0.2); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
   .privacy-link:hover { color: #C0395A; }
   .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 100; align-items: center; justify-content: center; padding: 24px; }
@@ -94,6 +97,18 @@
        onclick="if(window.ym) ym(108968246,'reachGoal','secret_click')">
       Secret Room
     </a>
+
+    <div class="social-links">
+      <a class="social-btn" href="https://www.instagram.com/iskraelectrical?igsh=MXJkbmFvZjh2OWhzZg==" target="_blank" rel="noopener" title="Instagram" onclick="if(window.ym) ym(108968246,'reachGoal','instagram_click')">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      </a>
+      <a class="social-btn" href="https://youtube.com/@iskra_electrical?si=3HHph0oTCZ2FzxzM" target="_blank" rel="noopener" title="YouTube" onclick="if(window.ym) ym(108968246,'reachGoal','youtube_click')">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+      <a class="social-btn" href="https://x.com/IskraElectrical" target="_blank" rel="noopener" title="Twitter / X" onclick="if(window.ym) ym(108968246,'reachGoal','twitter_click')">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+      </a>
+    </div>
 
     <span class="privacy-link" onclick="document.getElementById('privacyModal').classList.add('active')">
       Privacy Policy
